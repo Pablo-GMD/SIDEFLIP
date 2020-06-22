@@ -1,0 +1,10 @@
+
+$normal-red: red;
+
+:root {
+    --red: red;
+}
+
+* {
+    background-color: $normal-red;
+}

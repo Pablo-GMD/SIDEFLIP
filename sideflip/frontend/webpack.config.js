@@ -7,8 +7,13 @@ module.exports = {
           use: {
             loader: "babel-loader"
           }
+        },
+        {
+          test:/\.scss$/,
+          use:['style-loader','css-loader','sass-loader'],
+          exclude: /node_modules/,
         }
-      ]
+      ],
     },
     resolve: {
         extensions: ['.js', '.json', '.jsx']}
